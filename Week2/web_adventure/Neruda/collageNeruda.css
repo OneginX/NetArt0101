@@ -1,0 +1,23 @@
+body{
+    background-image: url(asset/image/bg1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a{
+    margin-right: 60px;
+    opacity: 80%;
+}
+
+
+p{
+    position: absolute;
+    top: 280px;
+    font-size: 180px; 
+    margin: 0 auto; 
+    color:rgb(68, 255, 255); 
+    z-index: -1;
+    width: 100%;
+    text-align: right;
+}

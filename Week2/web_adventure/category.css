@@ -1,0 +1,44 @@
+div{
+    width: 400px;
+    height: 70px;
+    border-style: double;
+    border-width: 3px;
+    margin: 80px auto;
+}
+
+p{
+    text-align: center;
+}
+
+.neruda{
+    position:relative;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+.dylan{
+    position:relative;
+    -webkit-animation: mover2 3s infinite  alternate;
+    animation: mover2 3s infinite  alternate;
+}
+
+.libai{
+    position:relative;
+    -webkit-animation: mover3 2s infinite  alternate;
+    animation: mover3 2s infinite  alternate;
+}
+
+    @keyframes mover {
+      0% { transform: translateX(0) translateY(0); }
+      100% { transform: translateX(100px) translateY(50px) ;}
+    }
+
+    @keyframes mover2 {
+        0% { transform: translateX(0px) translateY(-20px); }
+        100% { transform: translateX(-50px) translateY(50px) ;}
+    }
+
+    @keyframes mover3 {
+        0% { transform: translateX(0) translateY(0); }
+        100% { transform: translateX(-100px) translateY(50px) ;}
+    }
