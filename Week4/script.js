@@ -3,11 +3,12 @@ const hair_r = document.getElementById("hair_r");
 const hair_l = document.getElementById("hair_l");
 const blush_r = document.getElementById("blush_r");
 const blush_l = document.getElementById("blush_l");
-var colors = ['red', 'green', 'blue', 'orange', 'yellow'];
+const bubble = document.getElementById("bubble")
 
 duck.addEventListener("mouseenter", startWagging);
 duck.addEventListener("mouseleave", stopWagging);
 duck.addEventListener("click", changeColor);
+bubble.addEventListener("click", changeText);
 
 
 //wagging hair when the mouse hovers
@@ -31,3 +32,10 @@ function changeColor(){
     blush_l.style.background = "rgba(" + r + "," + g + "," + b + ", 0.313)";
 }
 
+//change texts
+function changeText(){
+    var list = ["Bonjour","你好","Hola","こにちは"];
+    let random = list[Math.floor(Math.random()*list.length)];
+    console.log(random);
+    bubble.innerHTML = ""+ random +"";
+}
