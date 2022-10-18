@@ -24,11 +24,3 @@ async function getData(){
 
 getData();
 
-
-
-//----------------------------------------blanks----------------------------------
-// function fillBlanks(){
-//     document.getElementById('name').innerHTML = response.id;
-// }
-
-// fillBlanks();
