@@ -8,11 +8,6 @@ const options = {
 
 const number = Math.floor(Math.random() * 500) + 1;
 
-// fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${number}`, options)
-//         .then(response => response.json())
-//         .then(response => console.log(response.id))
-//         .catch(err => console.error(err));
-
 async function getData(){
     const response = await fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${number}`, options);
     const data = await response.json();
@@ -24,6 +19,7 @@ async function getData(){
     document.getElementById('genre').textContent = data.genre;
     document.getElementById('dev').textContent = data.developer;
     document.getElementById('btn').href = data.game_url;    
+    document.getElementById('bg').style.backgroundImage =  `url(${data.thumbnail})`;
 }
 
 getData();
