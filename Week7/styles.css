@@ -1,8 +1,10 @@
 body{
-    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
     margin: 0 auto;
 }
 
 p{
     font-size: large;
+    line-height: 2em;
 }
