@@ -1,0 +1,14 @@
+html{
+    background-color: black;
+    color: aliceblue;
+}
+
+.cropped {
+    width: 360px; 
+    height: 360px; 
+    overflow: hidden;
+    }
+    
+.cropped img {
+    margin: -150px 0px 0px -150px;
+}
