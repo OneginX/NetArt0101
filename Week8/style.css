@@ -2,13 +2,64 @@ html{
     background-color: black;
     color: aliceblue;
 }
-
-.cropped {
-    width: 360px; 
-    height: 360px; 
-    overflow: hidden;
-    }
-    
-.cropped img {
-    margin: -150px 0px 0px -150px;
+body{
+    width: 80%;
+    margin: 0 auto;
 }
+
+.pop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:  20px;
+    z-index: 2;
+    text-align: center;
+    background-color: rgba(252, 252, 252, 0.582);
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textbox{
+    width: 50%;
+    line-height: 600px;
+}
+.textbox p{
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+img{
+    width: 50%;
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
